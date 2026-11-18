@@ -17,7 +17,9 @@ load_dotenv(dotenv_path, override=True)
 
 API_KEY = os.getenv("OGD_API_KEY")
 if not API_KEY:
-    raise ValueError("Missing OGD_API_KEY! Please set it in your .env file or as a GitHub Actions Secret.")
+    print("[INFO] No OGD_API_KEY found in environment or secrets. Skipping remote fetch cleanly.")
+    import sys
+    sys.exit(0)
 RESOURCE_ID = "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69"
 
 TARGET_CITIES = ["Delhi", "Bengaluru", "Mumbai", "Chennai", "Hyderabad", "Kolkata", "Ahmedabad"]
