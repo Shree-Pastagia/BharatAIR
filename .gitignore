@@ -1,0 +1,30 @@
+.env
+.env.*
+!.env.example
+.venv/
+.venv-gpu/
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Frontend Web Build Artifacts
+web/node_modules/
+node_modules/
+web/dist/
+dist/
+dist-ssr/
+*.local
+
+# Heavy GPU Training Artifacts & Scratch Run Dumps (Gigabytes of intermediate candidate checkpoints & 380MB prediction dumps)
+runs/
+
+# Raw monthly multi-gigabyte parquet download archives (clean analysis data is preserved in data/processed/)
+data/raw/
+data/phase4_audit/raw_cpcb_pm25/
+data/phase4_audit/source_snapshot_*/
+
