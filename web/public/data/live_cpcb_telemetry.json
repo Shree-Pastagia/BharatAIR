@@ -1,7 +1,7 @@
 {
   "source": "Open Government Data (data.gov.in) - CPCB CAAQMS Live Telemetry",
   "resource_id": "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69",
-  "polled_at": "2026-11-27T00:36:54.207531",
+  "polled_at": "2026-11-27T09:42:09.008265",
   "cities": {
     "Delhi": {
       "station_count": 0,
